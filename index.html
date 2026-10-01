@@ -1,390 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Game of Thrones - Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game of Thrones - Home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐉</text></svg>">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #2c2c2c;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 5px solid #c9a227;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: #c9a227;
-        }
-
-        header h2 {
-            font-size: 1.1rem;
-            font-weight: 300;
-            color: #ddd;
-            margin-top: 8px;
-        }
-
-        nav {
-            margin-top: 15px;
-        }
-
-        nav a {
-            color: #c9a227;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-        .titulo_secundario {
-            background-color: #1a1a2e;
-            color: #c9a227;
-            padding: 10px 20px;
-            margin: 30px 0 15px 0;
-            border-left: 6px solid #c9a227;
-            border-radius: 0 8px 8px 0;
-        }
-
-        main {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        article p {
-            margin-bottom: 12px;
-            text-align: justify;
-        }
-
-        figure {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        figure img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border: 3px solid #c9a227;
-        }
-
-        figcaption {
-            font-style: italic;
-            color: #666;
-            margin-top: 8px;
-            font-size: 0.9rem;
-        }
-
-        ul, ol {
-            margin-left: 30px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            margin-bottom: 6px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table, th, td {
-            border: 1px solid #c9a227;
-        }
-
-        th {
-            background-color: #1a1a2e;
-            color: #c9a227;
-            padding: 12px;
-            text-align: left;
-        }
-
-        td {
-            padding: 10px;
-            background-color: #fafafa;
-        }
-
-        tr:nth-child(even) td {
-            background-color: #f0f0f0;
-        }
-
-        dl {
-            margin: 15px 0;
-        }
-
-        dt {
-            font-weight: bold;
-            color: #1a1a2e;
-            margin-top: 10px;
-        }
-
-        dd {
-            margin-left: 25px;
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        aside {
-            background-color: #f9f4e8;
-            border-left: 5px solid #c9a227;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        aside h3 {
-            color: #1a1a2e;
-            margin-bottom: 10px;
-        }
-
-        .media-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        audio, video, iframe {
-            border-radius: 10px;
-            border: 2px solid #c9a227;
-            max-width: 100%;
-        }
-
-        footer {
-            background-color: #1a1a2e;
-            color: #ddd;
-            text-align: center;
-            padding: 25px 15px;
-            margin-top: 40px;
-            border-top: 5px solid #c9a227;
-        }
-
-        footer small {
-            display: block;
-            margin-top: 8px;
-            color: #999;
-        }
-
-        hr {
-            border: none;
-            height: 2px;
-            background: linear-gradient(to right, transparent, #c9a227, transparent);
-            margin: 30px 0;
-        }
-
-        .destaque {
-            color: #c9a227;
-            font-weight: bold;
-        }
-
-        em {
-            color: #555;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.6rem;
-            }
-            .media-container {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
 </head>
+
 <body>
+    <header id="titulo_principal">
+    <img src="img/got-logo.jpg" alt="Logo Game of Thrones" class="logo-header">
+    <h1>Game of Thrones</h1>
+    <h2>A guerra pelo Trono de Ferro</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sinopse.html">Sinopse</a>
+        <a href="imagemfilme.html">Imagem da série</a>
+        <a href="personagens.html">Personagens principais</a>
+        <a href="informacoes.html">Informações</a>
+        <a href="ordem.html">Ordem das temporadas</a>
+        <a href="curiosidades.html">Curiosidades</a>
+        <a href="impacto.html">Impacto Cultural</a>
+        <a href="#conclusao">Conclusão</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
 
-    <!-- Topo do site -->
-    <header>
-        <div>
-            <h1>Game of Thrones</h1>
-            <h2>A guerra pelo Trono de Ferro</h2>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="contato.html">Contato</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Conteúdo principal -->
     <main>
+        <header>
+            <h3 class="titulo_secundario">Universo de Westeros</h3>
+            <span>Publicado no dia 27/03/2026</span>
+        </header>
 
-        <!-- Sinopse da série -->
-        <section id="sinopse">
-            <h2 class="titulo_secundario">Sinopse</h2>
+        <div id="layout">
             <article>
-                <div>
-                    <p>
-                        <strong>Game of Thrones</strong> é uma série de televisão dramática de fantasia criada por
-                        <em>David Benioff</em> e <em>D.B. Weiss</em> para a HBO. Baseada na série de livros
-                        <strong>As Crônicas de Gelo e Fogo</strong> de <em>George R.R. Martin</em>, a trama se passa
-                        nos <span class="destaque">Sete Reinos</span> de Westeros.
-                    </p>
-                    <p>
-                        A história acompanha a luta pelo <strong>Trono de Ferro</strong> entre várias casas nobres,
-                        enquanto uma ameaça antiga e sobrenatural desperta além da Muralha, no Norte.
-                        <br>
-                        A série é conhecida por sua complexidade moral, personagens marcantes e reviravoltas
-                        chocantes<wbr> que<wbr> marcaram<wbr> a<wbr> cultura<wbr> pop.
-                    </p>
-                </div>
+                <section>
+                    <h3 class="titulo_secundario">Origem</h3>
+                    <p>Game of Thrones é uma série de televisão dramática de fantasia criada por
+                    David Benioff e D.B. Weiss para a HBO. Baseada na série de livros
+                    <em>As Crônicas de Gelo e Fogo</em> de George R.R. Martin, a trama se passa
+                    nos Sete Reinos de Westeros, um continente fictício inspirado na Europa
+                    medieval.</p>
+
+                    <p>A história acompanha a luta pelo <strong>Trono de Ferro</strong> entre várias casas
+                    nobres, enquanto uma ameaça antiga e sobrenatural desperta além da Muralha,
+                    no Norte. A série é conhecida por sua complexidade moral, personagens
+                    marcantes e reviravoltas chocantes que marcaram a cultura pop
+                    mundialmente.</p>
+
+                    <p>O universo criado por Martin é rico em detalhes: há dragões, gigantes,
+                    Caminhantes Brancos, magia, profecias e uma política brutal que faz
+                    <em>Game of Thrones</em> ser considerada uma das produções mais ambiciosas
+                    da história da televisão.</p>
+                </section>
+
+                <section>
+                    <h3 class="titulo_secundario">Etimologia</h3>
+                    <p>O título "Game of Thrones" (Jogo dos Tronos) vem de uma frase dita pela
+                    personagem Cersei Lannister na primeira temporada: <em>"When you play the
+                    game of thrones, you win or you die"</em> ("Quando você joga o jogo dos
+                    tronos, você vence ou morre").</p>
+
+                    <p>O termo original dos livros, <em>A Song of Ice and Fire</em> ("A Canção do
+                    Gelo e do Fogo"), refere-se à dualidade central da narrativa: o gelo
+                    representado pelos Stark e os Caminhantes Brancos; o fogo representado
+                    pelos Targaryen e seus dragões.</p>
+
+                    <p>Westeros é inspirado na Grã-Bretanha medieval, enquanto Essos (continente
+                    a leste) remete à Ásia e ao Mediterrâneo. A Muralha é inspirada no Muro
+                    de Adriano, construído pelos romanos no norte da Inglaterra.</p>
+                </section>
             </article>
-        </section>
 
-        <!-- Imagem da série -->
-        <section>
-            <h2 class="titulo_secundario">Imagem da Série</h2>
-            <figure>
-                <img src="img/got-logo.jpg" alt="Logotipo de Game of Thrones" width="600">
-                <figcaption>Logotipo oficial de Game of Thrones</figcaption>
-            </figure>
-        </section>
-
-        <!-- Personagens principais -->
-        <section id="personagens">
-            <h2 class="titulo_secundario">Personagens Principais</h2>
-            <div>
-                <ul>
-                    <li>Eddard Stark</li>
-                    <li>Daenerys Targaryen</li>
-                    <li>Tyrion Lannister</li>
-                    <li>Jon Snow</li>
-                    <li>Cersei Lannister</li>
-                    <li>Arya Stark</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Temporadas -->
-        <section id="temporadas">
-            <h2 class="titulo_secundario">Temporadas</h2>
-            <div>
-                <ol>
-                    <li>Temporada 1 (2011)</li>
-                    <li>Temporada 2 (2012)</li>
-                    <li>Temporada 3 (2013)</li>
-                    <li>Temporada 4 (2014)</li>
-                    <li>Temporada 5 (2015)</li>
-                    <li>Temporada 6 (2016)</li>
-                    <li>Temporada 7 (2017)</li>
-                    <li>Temporada 8 (2019)</li>
-                </ol>
-            </div>
-
-            <h3>Informações Rápidas</h3>
-            <dl>
-                <dt>Criadores</dt>
-                <dd>David Benioff e D.B. Weiss</dd>
-                <dt>Baseado em</dt>
-                <dd>As Crônicas de Gelo e Fogo, de George R.R. Martin</dd>
-                <dt>Gênero</dt>
-                <dd>Fantasia, drama, aventura</dd>
-                <dt>Emissora</dt>
-                <dd>HBO</dd>
-                <dt>Local de gravação</dt>
-                <dd>Irlanda do Norte, Croácia, Islândia, Marrocos, etc.</dd>
-            </dl>
-        </section>
-
-        <!-- Tabela de audiência -->
-        <section>
-            <h2 class="titulo_secundario">Audiência por Temporada</h2>
-            <div>
-                <table>
-                    <tr>
-                        <th>Temporada</th>
-                        <th>Ano</th>
-                        <th>Episódios</th>
-                        <th>Audiência Média (milhões)</th>
-                    </tr>
-                    <tr><td>1</td><td>2011</td><td>10</td><td>9,3</td></tr>
-                    <tr><td>2</td><td>2012</td><td>10</td><td>11,6</td></tr>
-                    <tr><td>3</td><td>2013</td><td>10</td><td>14,4</td></tr>
-                    <tr><td>4</td><td>2014</td><td>10</td><td>18,6</td></tr>
-                    <tr><td>5</td><td>2015</td><td>10</td><td>20,2</td></tr>
-                    <tr><td>6</td><td>2016</td><td>10</td><td>25,7</td></tr>
-                    <tr><td>7</td><td>2017</td><td>7</td><td>32,8</td></tr>
-                    <tr><td>8</td><td>2019</td><td>6</td><td>44,2</td></tr>
-                </table>
-            </div>
-        </section>
-
-        <!-- Curiosidade -->
-        <aside>
-            <h3>Você sabia?</h3>
-            <p>
-                A série recebeu <strong>59 Emmy Awards</strong>, sendo uma das mais premiadas da história da TV.
-                O episódio final da 8ª temporada foi assistido por mais de <em>19 milhões</em> de espectadores
-                apenas nos EUA no dia de sua estreia.
-            </p>
-        </aside>
-
-        <!-- Áudio, vídeo e iframe -->
-        <section id="midia">
-            <h2 class="titulo_secundario">Mídia</h2>
-            <div class="media-container">
-                <audio controls>
-                    <source src="assets/audio.mp3" type="audio/mpeg">
-                    Seu navegador não suporta áudio.
-                </audio>
-
-                <video width="480" controls>
-                    <source src="assets/video.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>
-
-                <iframe src="https://player.vimeo.com/video/76979871"
-                        width="480" height="270"
-                        frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowfullscreen
-                        title="Vídeo de exemplo">
-                </iframe>
-            </div>
-        </section>
-
-        <hr>
-
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <div>
-            <p>&copy; 2026 - Game of Thrones Fan Site.</p>
-            <small>Projeto educacional sem fins comerciais.</small>
+            <aside>
+                <h3 class="titulo_secundario">Westeros</h3>
+                <figure>
+                    <img src="img/mapa-westeros.jpg" alt="Mapa de Westeros">
+                    <figcaption><em>Mapa dos Sete Reinos</em></figcaption>
+                </figure>
+            </aside>
         </div>
-    </footer>
 
+        <article>
+            <section>
+                <h3 class="titulo_secundario">Casas Nobres</h3>
+                <p>Os Sete Reinos são divididos entre as grandes casas nobres: os
+                <strong>Stark</strong> do Norte (lobo gigante, lema "O Inverno Está Chegando"),
+                os <strong>Lannister</strong> do Oeste (leão, "Ouça-me Rugir"),
+                os <strong>Targaryen</strong> de Pedra do Dragão (dragão de três cabeças,
+                "Fogo e Sangue"), entre outras.</p>
+
+                <p>Cada casa possui sua própria história, cultura e ambições. A série explora
+                como essas casas se aliam e se traem em busca do poder. <em>Caos não é um
+                poço. Caos é uma escada</em>, diz Petyr Baelish, resumindo a política da série.</p>
+
+                <p>A produção foi filmada em locações na Irlanda do Norte, Croácia, Islândia,
+                Marrocos, Espanha e Malta, além dos estúdios da HBO em Belfast.</p>
+            </section>
+
+            <section id="conclusao">
+                <h3 class="titulo_secundario">Conclusão</h3>
+                <p>
+                    Game of Thrones é considerada uma das maiores produções da história da TV,
+                    tendo recebido 59 Emmy Awards e sido assistida por milhões de pessoas em
+                    todo o mundo.
+                </p>
+            </section>
+        </article>
+
+        <footer class="rodape">
+            <hr>
+            <small>© 2026 - Site sobre Game of Thrones</small>
+        </footer>
+    </main>
 </body>
 </html>

@@ -1,0 +1,400 @@
+/* ============================================
+   styles.css - Game of Thrones (Azul & Cinza)
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2b2d42;
+    background-color: #dfe6ec;
+}
+
+/* Cabeçalho principal */
+#titulo_principal {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+    color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #5dade2;
+}
+
+#titulo_principal h1 {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #5dade2;
+}
+
+#titulo_principal h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #c0c5ce;
+    margin-top: 8px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #5dade2;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #aed6f1;
+    text-decoration: underline;
+}
+
+/* Títulos secundários */
+.titulo_secundario {
+    background-color: #1b263b;
+    color: #85c1e9;
+    padding: 10px 20px;
+    margin: 30px 0 15px 0;
+    border-left: 6px solid #5dade2;
+    border-radius: 0 8px 8px 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Layout article + aside */
+#layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#layout article { flex: 2; }
+#layout aside   { flex: 1; }
+
+section { margin-bottom: 30px; }
+
+article p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* Imagens */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #5dade2;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+li { margin-bottom: 6px; }
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td { border: 1px solid #5dade2; }
+
+th {
+    background-color: #1b263b;
+    color: #85c1e9;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+tr:nth-child(even) td { background-color: #f0f0f0; }
+
+/* Lista de definição */
+dl { margin: 15px 0; }
+dt { font-weight: bold; color: #0d1b2a; margin-top: 10px; }
+dd { margin-left: 25px; margin-bottom: 5px; color: #555; }
+
+/* Aside */
+aside {
+    background-color: #eef2f6;
+    border-left: 5px solid #415a77;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+aside h3 { color: #0d1b2a; margin-bottom: 10px; }
+
+/* Formulário */
+form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px solid #5dade2;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0d1b2a;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+input[type="color"] { height: 50px; padding: 5px; cursor: pointer; }
+input[type="range"] { padding: 0; }
+
+input[type="file"] {
+    border: 2px dashed #5dade2;
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+
+textarea { resize: vertical; min-height: 100px; }
+select   { cursor: pointer; }
+
+button {
+    background-color: #0d1b2a;
+    color: #5dade2;
+    border: none;
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #5dade2;
+    color: #0d1b2a;
+    transform: scale(1.03);
+}
+
+button[type="reset"] {
+    background-color: #666;
+    color: #fff;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    background-color: #0d1b2a;
+    color: #ddd;
+    padding: 25px 15px;
+    margin-top: 40px;
+    border-top: 5px solid #5dade2;
+}
+
+.rodape small {
+    display: block;
+    margin-top: 8px;
+    color: #999;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #5dade2, transparent);
+    margin: 30px 0;
+}
+
+.destaque { color: #5dade2; font-weight: bold; }
+em { color: #555; }
+
+/* Mídia */
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+audio, video, iframe {
+    border-radius: 10px;
+    border: 2px solid #5dade2;
+    max-width: 100%;
+}
+
+/* ============================================
+   Extras para páginas específicas
+   ============================================ */
+
+/* Página de curiosidades */
+#curiosidades {
+    background-color: #ffffff;
+    border: solid 3px #415a77;
+    color: #2b2d42;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+#curiosidades:hover {
+    background-color: #0d1b2a;
+    color: #f5f5f5;
+    border: solid 3px #5dade2;
+}
+
+/* Animação do foguete */
+.animacao img {
+    display: block;
+    animation: foguete;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes foguete {
+    0%   { margin-left: 0%; }
+    25%  { margin-left: 80%; transform: rotate(0deg); }
+    50%  { margin-left: 80%; transform: rotate(-120deg); }
+    75%  { margin-left: 0%;  transform: rotate(-120deg); }
+    100% { margin-left: 0%;  transform: rotate(0deg); }
+}
+
+/* Página de impacto cultural (fundo) */
+#impacto_cultural {
+    background-image: url('img/westeros-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Página de informações (position) */
+
+#pai {
+    width: 100%;
+    max-width: 700px;
+    background-color: #415a77;
+    color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    position: relative;
+}
+
+#filho {
+    position: static;
+    background-color: #ffffff;
+    color: #0d1b2a;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #5dade2;
+}
+
+#irmao {
+    position: static;
+    background-color: #5dade2;
+    color: #0d1b2a;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilos das listas nas páginas */
+#estilo_lista_ul {
+    list-style-type: square;
+}
+
+#estilo_lista_ol {
+    list-style-type: decimal;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+    #titulo_principal h1 { font-size: 1.6rem; }
+    #layout { flex-direction: column; }
+    .media-container { flex-direction: column; align-items: center; }
+    nav a { display: inline-block; margin: 5px; }
+}
+
+/* ============================================
+   Logo no cabeçalho
+   ============================================ */
+.logo-header {
+    display: block;
+    width: auto;
+    height: 110px;              /* Altura fixa: 110px */
+    max-height: 110px;
+    max-width: 90%;             /* Nunca passa de 90% da tela */
+    margin: 15px auto 20px auto;/* Centraliza e dá respiro */
+    object-fit: contain;        /* Mantém a proporção original */
+    border: none;
+    border-radius: 0;
+    filter: drop-shadow(0 0 12px rgba(93, 173, 226, 0.7));
+}
+
+/* Ajuste do h1 quando tem logo acima */
+#titulo_principal h1 {
+    margin-top: 0;
+}
